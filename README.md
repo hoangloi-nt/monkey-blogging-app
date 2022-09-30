@@ -3,7 +3,7 @@
 <img width="121" alt="logo" src="https://user-images.githubusercontent.com/67638759/193264560-876008e4-25f0-49f8-93fe-789ed171e4ee.png">
 
 Web application to become a blogger for everybody. </br>
-Demo link:
+Demo link: https://monkey-blogging-app.netlify.app/
 
 ## Personal Project 👦🏻
 This project was made by me alone. </br>
