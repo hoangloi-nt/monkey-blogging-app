@@ -49,7 +49,7 @@ const HomeAllPosts = () => {
             slidesPerView={"auto"}
             navigation={true}
             modules={[Navigation]}
-            className="mySwiper"
+            className="mySwiper lg:w-[1260px]"
           >
             {posts.map((post) => (
               <SwiperSlide key={post.id} className="max-w-[300px] h-auto">
