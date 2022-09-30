@@ -10,9 +10,7 @@ import {
 import { debounce } from "lodash";
 import React, { useEffect, useState } from "react";
 import { Button } from "../../components/button";
-import { useAuth } from "../../contexts/auth-context";
 import { db } from "../../firebase/firebase-config";
-import { userRole } from "../../utils/constants";
 import DashboardHeading from "../dashboard/DashboardHeading";
 import UserTable from "./UserTable";
 

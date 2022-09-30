@@ -2,11 +2,6 @@ import React, { useRef } from "react";
 import { Editor } from "@tinymce/tinymce-react";
 const ContentEditor = (props) => {
   const editorRef = useRef(null);
-  const log = () => {
-    if (editorRef.current) {
-      console.log(editorRef.current.getContent());
-    }
-  };
   return (
     <div>
       <Editor

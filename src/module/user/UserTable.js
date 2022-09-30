@@ -1,7 +1,6 @@
 import { deleteUser } from "firebase/auth";
-import { collection, deleteDoc, doc, onSnapshot } from "firebase/firestore";
-import React, { useState } from "react";
-import { useEffect } from "react";
+import { deleteDoc, doc } from "firebase/firestore";
+import React from "react";
 import { useNavigate } from "react-router-dom";
 import Swal from "sweetalert2";
 import { ActionDelete, ActionEdit } from "../../components/action";
@@ -93,7 +92,7 @@ const UserTable = ({ userList }) => {
                     <img
                       src={user?.avatar}
                       alt=""
-                      className="w-10 h-10 rounded-full object-cover flex-shrink-0"
+                      className="flex-shrink-0 object-cover w-10 h-10 rounded-full"
                     />
                     <div className="flex-1">
                       <h3>{user?.fullname}</h3>

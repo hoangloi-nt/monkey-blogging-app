@@ -5,7 +5,7 @@ import { useState } from "react";
 import { useEffect } from "react";
 import { NavLink, useNavigate } from "react-router-dom";
 import { toast } from "react-toastify";
-import styled, { css } from "styled-components";
+import styled from "styled-components";
 import { useAuth } from "../../contexts/auth-context";
 import { db } from "../../firebase/firebase-config";
 import { Button } from "../button";
