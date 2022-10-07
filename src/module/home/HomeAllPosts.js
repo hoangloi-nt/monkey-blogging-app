@@ -9,7 +9,8 @@ import { db } from "../../firebase/firebase-config";
 import { collection, onSnapshot, query, where } from "firebase/firestore";
 import "swiper/css";
 import "swiper/css/navigation";
-import { Navigation } from "swiper";
+import "swiper/css/pagination";
+import { Navigation, Pagination } from "swiper";
 
 const HomeAllPostsStyles = styled.div`
   @media screen and (max-width: 1023.98px) {
@@ -42,14 +43,15 @@ const HomeAllPosts = () => {
     <HomeAllPostsStyles className="home-block">
       <div className="container">
         <Heading>All posts</Heading>
-        <div className="grid-layout">
+        <div className="relative flex">
           <Swiper
             grabCursor={true}
             spaceBetween={30}
             slidesPerView={"auto"}
             navigation={true}
-            modules={[Navigation]}
-            className="mySwiper lg:w-[1260px]"
+            pagination={true}
+            modules={[Navigation, Pagination]}
+            className="mySwiper lg:w-[1260px] !lg:pb-8"
           >
             {posts.map((post) => (
               <SwiperSlide key={post.id} className="max-w-[300px] h-auto">

@@ -30,7 +30,7 @@ const PostCategoryStyles = styled.div`
 
   .link-category {
     white-space: nowrap;
-    width: 108px;
+    max-width: 108px;
     overflow: hidden;
     text-overflow: ellipsis;
   }

@@ -131,3 +131,31 @@ a {
   background-color: #1dc071;
   color: #ebedff;
 }
+
+.swiper-horizontal > .swiper-pagination-bullets,
+.swiper-pagination-bullets.swiper-pagination-horizontal,
+.swiper-pagination-custom,
+.swiper-pagination-fraction {
+  @media screen and (min-width: 1024px) {
+    bottom: 0 !important;
+  }
+  @media screen and (max-width: 1023.98px) {
+    margin-top: 10px;
+    bottom: unset !important;
+  }
+}
+
+.swiper-pagination-bullet-active {
+  background-color: #1dc071 !important;
+}
+
+.swiper-pagination-bullet {
+  width: 25px !important;
+  border-radius: 20px !important;
+}
+
+@media screen and (min-width: 1024px) {
+  .swiper {
+    padding-bottom: 40px !important;
+  }
+}
