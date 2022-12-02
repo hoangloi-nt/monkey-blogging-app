@@ -46,8 +46,8 @@ const UserProfile = () => {
         const docData = await getDoc(colRef);
         await updateDoc(colRef, {
           ...values,
-          password: docData.data().password,
-          confirmPassword: docData.data().confirmPassword,
+          password: docData.data().password || "",
+          confirmPassword: docData.data().confirmPassword || "",
           avatar: image,
         });
         toast.success("Update information successfully!");

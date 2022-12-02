@@ -35,13 +35,14 @@ const SignInPage = () => {
   });
 
   useEffect(() => {
-    const arrayErros = Object.values(errors);
-    if (arrayErros.length > 0) {
+    let arrayErros = Object.values(errors);
+    if (arrayErros.length > 0 && arrayErros[0].type !== "email") {
       toast.error(arrayErros[0]?.message, {
         pauseOnHover: false,
       });
     }
   }, [errors]);
+
   const { userInfo } = useAuth();
   const navigate = useNavigate();
   useEffect(() => {
